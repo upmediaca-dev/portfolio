@@ -401,7 +401,7 @@ applyLang();
  addEventListener('scroll',sc,{passive:true});sc();
  // copy email
  var cb=document.getElementById('copyEmail');
- if(cb)cb.addEventListener('click',function(){var t='sgomezz1993@gmail.com';var lab=cb.querySelector('span');var orig=copy[lang].copyCta;
+ if(cb)cb.addEventListener('click',function(){var t='';var lab=cb.querySelector('span');var orig=copy[lang].copyCta;
   function ok(){lab.textContent=lang==='en'?'Copied':'Copiado';setTimeout(function(){lab.textContent=orig},1800)}
   function fb(){lab.textContent=lang==='en'?'Use LinkedIn instead':'Escríbeme por LinkedIn'}
   try{navigator.clipboard.writeText(t).then(ok,fb)}catch(e){fb()}});
